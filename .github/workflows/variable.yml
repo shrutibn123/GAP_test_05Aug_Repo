@@ -10,9 +10,11 @@ jobs:
    MY_VAR: jobs
   runs-on: ubuntu-latest
   steps:
+  - name: Print
+     run: 
+      echo ' ${{env.MY_VAR}}'
+      echo ' ${{vars.MY_VAR}}'
    env:
      MY_VAR: steps
-   - name: Print
-     run: echo ' ${{env.MY_VAR}}'
   
   
