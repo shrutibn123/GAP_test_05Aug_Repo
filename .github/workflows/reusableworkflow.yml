@@ -3,7 +3,7 @@ name: Reusable Workflow
 on:
  workflow_call:
  
- jobs:
+jobs:
   build:
    runs-on: ubuntu-latest
    steps:
